@@ -1,0 +1,40 @@
+{
+    "name": "Decentral Games",
+    "version": "2.0.0",
+    "description": "",
+    "main": "truffle-config.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "chain": "ganache-cli --defaultBalanceEther 10000 -i 5777 -p 9545 -l 12500000 -m \"prevent urban meadow draft involve security curtain robot brick question scatter try\"",
+        "deploy": "truffle migrate --reset",
+        "test-roulette": "truffle test test/roulette.test.js",
+        "test-slots": "truffle test test/slots.test.js",
+        "test-treasury": "truffle test test/treasury.test.js",
+        "test-pointer": "truffle test test/pointer.test.js",
+        "flatten": "cd contracts && truffle-flattener NFT.sol > ../NFT-Flattened.sol"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {},
+    "devDependencies": {
+        "@biconomy/mexa": "^1.5.6",
+        "@openzeppelin/contracts": "^*",
+        "@truffle/hdwallet-provider": "^1.0.42",
+        "bignumber.js": "8.0.2",
+        "chai": "^4.2.0",
+        "chai-bignumber": "^3.0.0",
+        "eslint": "^5.13.0",
+        "eth-gas-reporter": "^0.1.12",
+        "ethereum-bridge": "^0.6.2",
+        "ethlint": "1.2.3",
+        "ganache-cli": "^6.9.1",
+        "serialize-javascript": "^4.0.0",
+        "truffle": "^5.1.41",
+        "web3": "^1.2.11",
+        "truffle-hdwallet-provider": "^1.0.17",
+        "truffle-privatekey-provider": "^1.3.0"
+    }
+}
