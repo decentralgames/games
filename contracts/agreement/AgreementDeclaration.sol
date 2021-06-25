@@ -36,7 +36,7 @@ contract AgreementDeclaration {
     modifier onlyPartnerDG() {
         require(
             msg.sender == partnerDG,
-            'onlyPartnerDG: invalid'
+            'onlyPartnerDG: access denied'
         );
         _;
     }
@@ -44,7 +44,7 @@ contract AgreementDeclaration {
     modifier onlyPartnerMANA() {
         require(
             msg.sender == partnerMANA,
-            'onlyPartnerMANA: invalid'
+            'onlyPartnerMANA: access denied'
         );
         _;
     }
@@ -53,7 +53,7 @@ contract AgreementDeclaration {
         require(
             msg.sender == partnerDG ||
             msg.sender == partnerMANA,
-            'onlyPartners: invald'
+            'onlyPartners: access denied'
         );
         _;
     }

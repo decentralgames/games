@@ -57,7 +57,7 @@ contract AgreementHelper {
                     data, (bool)
                 )
             ),
-            'safeApprove: approve failed'
+            'safeApprove: failed'
         );
     }
 
@@ -82,7 +82,7 @@ contract AgreementHelper {
                     data, (bool)
                 )
             ),
-            'safeTransfer: transfer failed'
+            'safeTransfer: failed'
         );
     }
 
@@ -109,7 +109,7 @@ contract AgreementHelper {
                     data, (bool)
                 )
             ),
-            'safeTransferFrom: transfer failed'
+            'safeTransferFrom: failed'
         );
     }
 
@@ -130,7 +130,7 @@ contract AgreementHelper {
             success && abi.decode(
                 data, (uint256)
             ) >= _required,
-            'safeBalanceOf: balance failed'
+            'safeBalanceOf: failed'
         );
     }
 }
